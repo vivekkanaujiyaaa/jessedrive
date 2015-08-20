@@ -1,0 +1,331 @@
+/*JesseDrive stylesheet*/
+
+body{
+	background-color: #978D8D;
+	/*z-index: 3;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Title{
+	text-align: center;
+	color: white;
+	size: 4em;
+	font-family: candara;
+}
+
+#index_file_table{
+	top: 85px;
+	position: relative;
+	z-index: 1;
+	/*width: 80%;*/
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+
+#flname{
+	width: 35%;
+}
+
+#fltype{
+	width: 15%;
+}
+
+#flsize{
+	width: 20%;
+}
+
+#flopti{
+	width: 10%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	color: #FFAF25;
+}
+
+#login-title{
+	size: 4em;
+	font-family: candara;
+	float: right; 
+	margin-left: 50%;
+	position: fixed;
+	vertical-align: middle;
+}
+
+fieldset{
+	/*vertical-align: middle;*/
+	margin-top: 100%;
+}
+
+#loginframe{
+	border: 1px solid #574D4D;
+	margin-top: 75%;
+	z-index: 2;
+	width: 80%;
+}
+
+#loginform{
+	margin-top: -5%;
+}
+
+#registerframe{
+	border: 1px solid #574D4D;
+	margin-top: 10%;
+	z-index: 2;
+	width: 80%;
+}
+
+#registerform{
+	margin-top: 2%;
+}
+
+#fieldset_container{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+	text-align: center;
+}
+
+#loginbar{
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	left: 0px;
+	top: 0px;
+	width: 20%;
+	background-color: orange;
+	height: 100%;
+	position: fixed;
+	clear: both;
+}
+
+#ww {
+    text-align: center;
+	border: 1px solid blue;
+	border-radius: 5px;
+	width: 90%;
+	margin-bottom: 2.5%;
+}
+
+.g-recaptcha{
+	margin-top: 10px;
+	/*margin-right: -50%;
+	margin: auto;*/
+}
+
+/*ue: upload error*/
+/*mke: folder creation error*/
+#ue {
+	border: 2px dashed red;
+	z-index: 9;
+	width: 600px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: grey;
+}
+
+#mke {
+	border: 2px dashed red;
+	z-index: 9;
+	position: relative;
+	width: 600px;
+	background-color: grey;
+}
+
+#navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+	margin: 0px 0px 10px 0px;
+	height: 50px;
+	/*border: 5px solid grey;*/
+	background-color: orange;
+	z-index: 10;
+	padding: 0;
+	opacity: .8;
+	clear: both;
+	left: 0px;
+	
+}
+
+#emfl{
+	top: 85px;
+	position: relative;
+	z-index: 1;
+	text-align: center; 
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+
+
+#mkdirform{
+	margin-left: 10px;
+	float: left;
+}
+
+#uplform{
+	float: left;
+}
+
+#logoutform{
+	float: right;
+	color: white;
+	font-family: candara;
+	/*margin-left: 40%;*/
+	/*width: 10%;*/
+	margin-right: 5px;
+	position: relative;
+}
+
+#folderarr{
+	top: 60px;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+
+#videoframe{
+	opacity: 1;
+	z-index: 3;
+	background: grey;
+	position: fixed;
+	width: 80%;
+	height: 85%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	border: 1px solid #574D4D;
+	vertical-align: middle;
+	margin-top: 3%;
+	border-radius: 5px;
+}
+#footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+	z-index: 10;
+	padding: 0;
+	clear: both;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+	color: white;
+}
+
+/*#footer_eula a{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+	z-index: 999;
+	padding: 0;
+	clear: both;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+	color: black;
+}*/
+
+#video{
+	width: 100%;
+	height: 90%;
+	/*margin-left: 2,5%;
+	margin-right: 2,5%;*/
+	z-index: 3;
+	position: fixed;
+	vertical-align: middle;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#frameclosebutton{
+	float: right;
+	text-align: right;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+	size: 2em;
+}
+
+#frametitle{
+	float: left;
+	text-align: left;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+	size: 2em;
+}
+
+#TEFrame{
+	opacity: 1;
+	z-index: 3;
+	background: grey;
+	position: fixed;
+	width: 80%;
+	height: 85%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	border: 1px solid #574D4D;
+	vertical-align: middle;
+	margin-top: 3%;
+	border-radius: 5px;
+}
+
+textarea {
+	width: 99%;
+	height: 78vh;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#eula_chkbx{
+	float: left;
+	margin-left: 4%;
+	margin-right: -6%;
+}
+
+#eula_chkbx_text a{
+	color: blue;
+}
+
+#eula_chkbx_text{
+	font-size: 0.8em;
+	/*margin-left: -6%;*/
+	margin-bottom: 5%;
+	display: inline;
+}
+
+#plupload_container{
+	position: fixed;
+	bottom: 0;
+	right:0;
+	padding: 0;
+	font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+	z-index:99999;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 1px;
+}
+
+.plu_filename{
+	float: left;
+	display: inline-table;
+	margin-right: 43px;
+}
+
+.plu_filestatus{
+	float: right;
+	display: inline-table;
+	margin-left: 10%;
+	position: absolute;
+	right: 3px;
+}
