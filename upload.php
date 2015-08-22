@@ -31,18 +31,22 @@ $targetDir = '/dev/null';
 $cleanupTargetDir = true; // Remove old files
 $maxFileAge = 5 * 3600; // Temp file age in seconds
 
+session_start();
 if(isset($_REQUEST['folder_param_jd'])){
-	$userfolder = $_REQUEST['folder_param_jd'];
-	$targetDir = $serverroot.$userfolder;
+	if(isset($_SESSION['JDLogin'])){
+		$sesexplode = explode(';', $_SESSION['JDLogin']);
+		$userhash = $sesexplode[1];
+		$fileexplode = explode('/', $userfolder);
+		if($fileexplode[1] == $userhash && $fileexplode[0] == 'files'){
+			$userfolder = $_REQUEST['folder_param_jd'];
+			$targetDir = $serverroot.$userfolder;
+		}
+	}
 }
 
-session_start();
 if(isset($_SESSION['JDLogin'])){
-	$sesexplode = explode(';', $_SESSION['JDLogin']);
 	$user = $sesexplode[0];
-	$userhash = $sesexplode[1];
-
-	$fileexplode = explode('/', $userfolder);
+	
 	//echo 'debugmode on - '.$file.';';exit;
 	if($fileexplode[1] === $userhash){
 		if (isset($_REQUEST["name"])) {
