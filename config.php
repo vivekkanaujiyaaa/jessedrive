@@ -10,7 +10,7 @@
 //MySQL Server settings
 $servername = "localhost";
 $username = "root";
-$password = "zeus9887";
+$password = "";
 $dbname = "usertbl";
 
 //Server settings
@@ -24,6 +24,6 @@ $max_user_space_bytes = 16106127360; //Sets the max userspace in bytes (15GB in 
 //Security settings
 $ban = false; //Defines whether a user is banned when a hack attempt is detected (!!warning!! an innocent user can be sent a malicious link this way!)
 
-$grecaptcha_datakey = '6LedMgQTAAAAAHgYbjOiniYK1sRUr93DWT7Kt88';
-$grecaptcha_privatekey = '6LedMgQTAAAAAPoMqX7CNJIsRa6EJPaA2g5Eab05';
+$grecaptcha_datakey = '';
+$grecaptcha_privatekey = '';
 ?>
