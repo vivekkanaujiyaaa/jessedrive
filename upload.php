@@ -69,7 +69,6 @@ if(isset($_SESSION['JDLogin'])){
 			$targetDir = '/dev/null';
 			$filePath = '/dev/null';
 			exit;
-			//This should work but it doesn't :/
 		}
 
 		if ($cleanupTargetDir) {
@@ -119,7 +118,13 @@ if(isset($_SESSION['JDLogin'])){
 		chmod($filePath, 0766);
 		// Return Success JSON-RPC response
 		die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
-		
+	}
+	else{
+		$fileName = 'file_not_allowed';
+		$targetDir = '/dev/null';
+		$filePath = '/dev/null';
+		exit;
+	}
 }
 else{
 	header('location:login.php');
